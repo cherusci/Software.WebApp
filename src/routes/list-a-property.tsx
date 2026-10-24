@@ -1,0 +1,1 @@
+import {createFileRoute,redirect} from '@tanstack/react-router';export const Route=createFileRoute('/list-a-property')({beforeLoad:()=>{throw redirect({to:'/list-property'})}});

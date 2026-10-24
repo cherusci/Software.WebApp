@@ -1,0 +1,1 @@
+import {createFileRoute,redirect} from '@tanstack/react-router';export const Route=createFileRoute('/auth')({validateSearch:(s:Record<string,unknown>)=>({mode:typeof s['mode']==='string'?s['mode']:'signin'}),beforeLoad:({search})=>{throw redirect({to:search.mode==='signup'?'/sign-up':'/sign-in'})}});

@@ -1,0 +1,1 @@
+import {createFileRoute,redirect} from '@tanstack/react-router';export const Route=createFileRoute('/for-landlords')({beforeLoad:()=>{throw redirect({to:'/landlords'})}});

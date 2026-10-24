@@ -1,0 +1,1 @@
+import {createFileRoute} from '@tanstack/react-router';import {InfoPage} from '@/components/rp/InfoPage';import {pageHead} from '@/lib/page-head';export const Route=createFileRoute('/how-it-works')({head:()=>pageHead('How It Works','RentPaddy how-it-works information for Lagos residential rentals.'),component:()=> <InfoPage kind='how-it-works'/>});
